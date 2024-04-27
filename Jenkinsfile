@@ -1,20 +1,20 @@
 pipeline {
     agent any
 
-    stages {
+    stages(plan) {
         stage {
             steps {
                 echo "plan"
 
             }
         }
-        stage {
+        stage(build) {
             steps {
                 echo "build"
 
             }
         }
-        stage {
+        stage(apply) {
             steps {
                echo "apply"
             }
